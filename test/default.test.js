@@ -7,7 +7,7 @@ Test('johnnyFive has a greet function', t => t.truthy(Assignment.johnnyFive.gree
 
 Test(`johnnyFive's greet function returns the proper greeting`, t => t.is(Assignment.johnnyFive.greet(), 'Johnny Five is Alive'));
 
-Test(`johnnyFive's greet function takes a name parameter`, t => t.is(Assignment.johnnyFive.greet(), 'Johnny Five is Alive'));
+Test(`johnnyFive's greet function takes a name parameter`, t => t.is(Assignment.johnnyFive.greet('Tyler'), `Hello, Tyler. I am Johnny 5.  I am alive!`));
 
 Test('shout function is exported', t => t.truthy(Assignment.shout));
 
@@ -29,10 +29,13 @@ Test('playing with AVA division', t => {
     t.deepEqual(5 / 5, 1)
 });
 
-Test(`playin with AVA - truthy`, t => {
+Test(`playing with AVA - truthy`, t => {
     t.truthy('Alphabet soup' === 'Alphabet soup')
 });
 
 Test('playing with AVA - falsy', t => {
     t.falsy('Cheese' === 'Butter')
 });
+
+
+

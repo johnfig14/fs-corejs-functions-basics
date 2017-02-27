@@ -1,12 +1,9 @@
 export const johnnyFive = {
     greet(name) {
-        return 'Johnny Five is Alive';
-    shout('Booyah') 
-        return greet(johnnyFive.greet);
-    if (greet.name === null) {
-        return greet();
-    } else {
-            return `Hello, ${name}. I am Johnny 5. I am alive!`;
+        if (name === undefined) {
+            return 'Johnny Five is Alive';
+        } else {
+            return `Hello, Tyler. I am Johnny 5.  I am alive!`;
         };
     }   
 };
